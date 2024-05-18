@@ -92,3 +92,12 @@ ol {
   width: 194px;
   height: 103px;
 }
+
+.result__video-container,
+.content__list {
+  position: relative; 
+}
+
+.preloader {
+  position: absolute;
+}
