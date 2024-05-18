@@ -36,3 +36,46 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 133px;
+  align-items: flex-end;
+}
+.result {
+  margin-left: 30px;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.content__list {
+  height: 298px;
+  overflow-y: auto;
+}
+
+.title {
+  margin-bottom: 26px;
+}
+
+.content__video-card {
+}
+
+.result__video-container {
+}
+
+.result__video-container video {
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.search-form__fieldset {
+}
