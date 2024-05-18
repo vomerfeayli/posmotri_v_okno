@@ -79,7 +79,7 @@ ol {
   align-items: flex-start;
 }
 
-.content__list-item:not(:last-child) {
+ul li.content__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -96,4 +96,47 @@ ol {
 .result__video-container,
 .content__list {
   position: relative; 
+}
+
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  color: #545050;
+}
+
+.content__accent {
+  color: white;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: white;
+}
+
+.content__video-card-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.content__video-card-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: white;
+}
+
+.content__video-card-description {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 90%;
+  color: white;
 }
