@@ -52,11 +52,11 @@ ol {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
+  min-width: 416px;
 }
 
 .content__list {
   height: 298px;
-  min-width: 330px;
   overflow-y: auto;
 }
 
