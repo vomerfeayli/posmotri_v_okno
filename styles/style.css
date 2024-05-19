@@ -115,11 +115,11 @@ ul li.content__list-item:not(:last-child) {
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
-  color: #545050;
+  color: white;
 }
 
 .content__accent {
-  color: white;
+  color: #545050;
 }
 
 .content__card-link {
@@ -139,6 +139,7 @@ ul li.content__list-item:not(:last-child) {
   line-height: 100%;
   text-transform: uppercase;
   color: white;
+  margin-top: 6px;
 }
 
 .content__video-card-description {
@@ -168,12 +169,12 @@ fieldset {
 }
 
 .search-form__label {
-  display: inline-flex;
+  display: flex;
   width: fit-content;
   cursor: pointer;
 }
 
-input.search-form__textfield {
+input[type="text"] {
   background-color: transparent;
   color: inherit;
   font-family: inherit;
@@ -183,27 +184,61 @@ input.search-form__textfield {
   border: none;
   border-top:1px solid white;
   border-bottom:1px solid white;
+  padding: 0;
 }
 
 .search-form__pseudo-checkbox {
   width: 19px;
   height: 19px;
   margin-right: 5px;
-  background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid white;
+  position: relative;
+}
+
+input[type="checkbox"]:checked + span::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  position: absolute;
+  inset: 1px 1px;
 }
 
 .button {
   cursor: pointer;
   color: white;
   background: none;
-  border: 1px solid #fff;
+  border: 1px solid white;
   padding: 0;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
   height: 34px;
+}
+
+.button:hover,
+.search-form__label-text:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+} 
+
+.button:active,
+.content__video-card:active {
+  background: #545050;
+}
+
+.button:focus,
+.search-form__label:focus-within,
+.search-form__textfield:focus {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+.content__video-card:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px; 
+  text-underline-offset: 2px; 
 }
 
 .search-form__submit-button {
