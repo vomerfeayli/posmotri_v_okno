@@ -228,8 +228,8 @@ input[type="checkbox"]:checked + span::before {
   background: #545050;
 }
 
-.button:focus,
-.search-form__label:focus-within,
+.button:focus-visible,
+.search-form__label:has(:focus-visible),
 .search-form__textfield:focus {
   outline: 1px solid white;
   outline-offset: 1px;
